@@ -129,6 +129,10 @@ body.active .toggle-btn {
 
 /*Estilos del Formulario de Reservas*/
 
+body.reserv-page {
+  background-image: url("/assets/img/rest1.jpg");
+}
+
 h1 { 
   text-align: center;
 }
@@ -146,7 +150,7 @@ section {
   justify-content: center;
   width: 50%;
   margin: auto;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 20px;
   border-radius: 20px;
 }
@@ -171,6 +175,7 @@ form.reserv-form input[type="time"] {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     padding: 10px;
     transition: box-shadow 0.3s ease;
+    font-family: Poppins, sans-serif;
 }
 
 form.reserv-form textarea {
@@ -182,6 +187,7 @@ form.reserv-form textarea {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
     padding: 10px;
     transition: box-shadow 0.3s ease;
+    font-family: Poppins, sans-serif;
 }
 
 form.reserv-form button {
@@ -197,6 +203,7 @@ form.reserv-form button {
     color: black; 
     font-size: 1em; 
     cursor: pointer; 
+    text-align: center;
 }
 
 /*Fin de Estilos de Formulario de Reservas*/
