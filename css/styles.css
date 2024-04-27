@@ -139,7 +139,7 @@ h1 {
 
 section h2 {
   text-align: center;
-  color: green; /*Ajustar al color definido por el grupo*/
+  color: black; /*Ajustar al color definido por el grupo*/
   font-family: 'Franklin Gothic Medium', cursive;
 }
 
@@ -177,6 +177,8 @@ form.reserv-form input[type="time"] {
     transition: box-shadow 0.3s ease;
     font-family: Poppins, sans-serif;
 }
+
+
 
 form.reserv-form textarea {
     margin: 10px 0;
