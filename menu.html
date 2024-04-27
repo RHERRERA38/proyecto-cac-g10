@@ -1,41 +1,351 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu Restaurante</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav>
-        <a href="#" class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="white">
-                <path d="M25.565,9.785c-0.123,0.077-3.051,1.702-3.051,5.305c0.138,4.109,3.695,5.55,3.756,5.55 c-0.061,0.077-0.537,1.963-1.947,3.94C23.204,26.283,21.962,28,20.076,28c-1.794,0-2.438-1.135-4.508-1.135 c-2.223,0-2.852,1.135-4.554,1.135c-1.886,0-3.22-1.809-4.4-3.496c-1.533-2.208-2.836-5.673-2.882-9 c-0.031-1.763,0.307-3.496,1.165-4.968c1.211-2.055,3.373-3.45,5.734-3.496c1.809-0.061,3.419,1.242,4.523,1.242 c1.058,0,3.036-1.242,5.274-1.242C21.394,7.041,23.97,7.332,25.565,9.785z M15.001,6.688c-0.322-1.61,0.567-3.22,1.395-4.247 c1.058-1.242,2.729-2.085,4.17-2.085c0.092,1.61-0.491,3.189-1.533,4.339C18.098,5.937,16.488,6.872,15.001,6.688z" />
-            </svg>
-        </a>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Menú</a></li>
-            <li><a href="reservas.html">Reservas</a></li>            
-            <li><a href="contacto.html">Ubicación y Contacto</a></li>
-        </ul>
-        <button class="menu-icon">
-            <svg fill="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 6H20M4 12H20M13 18H20" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-            </svg>
-        </button>
+        <div class="sidebar-header">
+            <a class="logo-wrapper">
+                <img src="./assets/logo.svg" alt="Logo">
+                <h2 class="hidden">LOGO</h2>
+            </a>
+            <button class="toggle-btn">
+                <img src="./assets/expand.svg" alt="expand button">
+            </button>
+        </div>
+
+
+        <div class="sidebar-links">
+            <a class="link active" href="index.html">
+                <img src="./assets/home.svg" alt="">
+                <span class="hidden">Inicio</span>
+            </a>
+            <a class="link" href="/menu.html">
+                <img src="./assets/menu.svg" alt="">
+                <span class="hidden">Menu</span>
+            </a>
+            <a class="link" href="/reservas.html">
+                <img src="./assets/reservas.svg" alt="">
+                <span class="hidden">Reservas</span>
+            </a>
+            </li>
+            <a class="link" href="/contacto.html">
+                <img src="./assets/ubicacion.svg" alt="">
+                <span class="hidden">Ubicación y Contacto</span>
+            </a>
+        </div>
     </nav>
 
-    <main>
-        <section id="content">
-            <!-- Contenido de cada página -->
-        </section>
-    </main>
+    <main class="main-menu">
+        <section id="section-menu" class="section-menu">
 
-    <footer>
-        <p>&copy; 2024 Tu Restaurante. Todos los derechos reservados.</p>
-    </footer>
+            <h1 id="h1-menu" class="h1-menu">Menú</h1>
+
+            <div id="div-tabs" class="div-tabs">
+
+                <button aria-selected="false" id="button-entradas" class="a-tabs active">Entradas</button>
+                <button aria-selected="false" id="button-principal" class="a-tabs ">Principal</button>
+                <button aria-selected="false" id="button-postres" class="a-tabs ">Postres</button>
+                <button aria-selected="false" id="button-bebidas" class="a-tabs ">Bebidas</button>
+
+            </div>
+        </section>
+
+
+        <div id="entradas" class="div-carta entradas show">
+            <h2>PLATOS PEQUEÑOS</h2>
+            <p>OKRA CRUJIENTE Y HUMMUS <strong>18</strong><br>
+                Okra frita Masala, hummus con especias y comino
+            </p>
+            <p>
+                CANGREJO PURI CAVIAR <strong>24</strong><br>
+                Cangrejo con mantequilla y ajo en un puri crujiente cubierto con caviar de ámbar Kaluga
+            </p>
+            <p>
+                AGUACATE PAPDI CHAAT <strong>20</strong><br>
+                Masala Guacamole, Chips Toro Crujientes (VG, GF)
+            </p>
+            <p>
+                MUMBAI VADA PAV <strong>16</strong><br>
+                Empanada de patatas especiadas, chutney de ajo y bollos caseros (V)
+            </p>
+            <p>
+                CHOP DE REMOLACHA BENGALÍ <strong>18</strong><br>
+                Croquetas de remolacha roja asada, Kasundi Mayo (V)*
+            </p>
+            <p>
+                POLLO FRITO KERALA <strong>20</strong><br>
+                Pollo frito crujiente, deshuesado y especiado del sur, hojas de curry, (GF)
+            </p>
+            <p>
+                CAMARÓN KOLIWADA <strong>24</strong><br>
+                Buñuelos estilo palomitas de maíz, salsa de mango encurtido (GF)
+            </p>
+            <p>
+                OLD DELHI CHAAT <strong>18</strong><br>
+                Garbanzos cocidos a fuego lento, puré de patatas, yogur y chutneys (V)
+            </p>
+            <p>
+                ENSALADA PICADA DE MANEESH <strong>16</strong><br>
+                Lechuga romana, repollo morado, calabacín templado, aderezo de moras y azafrán (V, GF) (Agregar paneer:
+                +8, pollo: +10, camarones: +12)
+            </p>
+            <p>
+                WAFFLE DE CARDAMOMO <strong>22</strong><br>
+                Mantequilla de azúcar moreno, plátanos caramelizados y frutos rojos
+            </p>
+            <p>
+                SONA BURGER <strong>25</strong><br>
+                Empanada de carne sazonada, queso gruyere, chutney de tomate, papas fritas Masala o verduras balsámicas
+                + huevo frito 4
+            </p>
+            <p><br></p>
+        </div>
+
+        <div id="principal" class="div-carta principal">
+            <h2>LA SONA PIZZA 24</h2>
+            <p>Burrata de POLLO TIKKA <br>
+                Burrata ,salsa de tomate asado
+            </p>
+            <p>CHILI PANEER <br>
+                Paneer especiado, jalapeño (V)
+            </p>
+            <p>TRUFA MALAI HONGOS <br>
+                Ricotta, Mezcla De Hongos Silvestres (V)</p>
+            <p><br></p>
+            <h2>A LA PARRILLA</h2>
+            <p>POLLO ASADO KERALA <strong>38</strong><br>
+                Patatas alevines, ensalada Green Market, chutney de menta (GF)</p>
+            <p>COSTILLAS DE CERDO BBQ VINDALOO <strong>42</strong><br>
+                Glaseado de chile pegajoso, mango, cebolla encurtida (GF)</p>
+            <p>CHULETAS DE CORDERO CON TAMARINDO <strong>54</strong><br>
+                Chile ahumado, ensalada de repollo con hinojo, raita de ajo (GF)</p>
+            <p>LUBIANA CHILENA A LA PLANCHA <strong>44</strong><br>
+                Beurre Blanc de Ajo, Espárragos, Zanahorias Heirloom, Espinacas Salteadas, Quinua Pulao (GF)</p>
+            <p>FILETE DE CARNE CAFREAL <strong>48</strong><br>
+                Filete Bavette tierno, champiñones silvestres y jugo especiado (GF)</p>
+            <p><br></p>
+            <h2>BIRIYANI</h2>
+            <p>CORDERO DE CALCUTA BIRIYANI <strong>42</strong><br>
+                Arroz Yakhni con azafrán, patatas al vapor, raita (GF)</p>
+            <p>BIRIYANI DE POLLO HYDERABADI <strong>34</strong><br>
+                Arroz con azafrán, menta y cebolla crujiente (SG)</p>
+            <p>AWADHI VEGETABLE BIRYANI <strong>32</strong><br>
+                Arroz con Azafrán, Verduras de Temporada, Raita (V, GF)</p>
+            <p><br></p>
+            <h2>VERDURAS</h2>
+            <p>BERENJENA BEBÉ MASALA <strong>28</strong><br>
+                Tomate tradicional, puré de cebolla, Garam Masala casero (VG, GF)</p>
+            <p>AMRITSARI MUTTER PANEER <strong>28</strong><br>
+                Requesón casero, guisantes, salsa cremosa de tomate (V)</p>
+            <p>SARSON KA SAAG <strong>28</strong><br>
+                Hojas de mostaza punjabi, maíz roti (V)*</p>
+            <p>RAJMA DAL MAKHANI <strong>24</strong><br>
+                Frijoles rojos, lentejas beluga negras) (V, GF)</p>
+            <h2><br></h2>
+            <h2>CURS</h2>
+            <p>FLOYD'S GOAN FISH CURRY <strong>36</strong><br>
+                Caldo de almejas y coco, kokum, arroz rojo (GF)</p>
+            <p>POLLO CON MANTEQUILLA DE BURRATA <strong>34</strong><br>
+                Pollo Asado Tandoor, Cremosa Mantequilla De Tomate San Marzano Masala (GF)</p>
+            <p>FERROCARRIL MUTTON MASALA <strong>42</strong><br>
+                Paletilla de Cordero Cocida a Lento, Patatas Baby (GF)</p>
+            <h2><br></h2>
+            <h2>PANES CASERO</h2>
+            <p>NAAN (V) <br>
+                Mantequilla 8 | Ajo 8 | Queso Chile 10</p>
+            <p>ROTI MULTICEREALES (VG) <strong>8</strong></p>
+            <p>KULCHA DE POLLO CON MANTEQUILLA <strong>10</strong></p>
+            <p><br></p>
+            <h2>ACOMPAÑAMIENTOS</h2>
+            <p>ARROZ (VG, GF) <strong>5</strong><br>
+                Basmati al vapor | Arroz Rojo De Goa</p>
+            <p>RAITA (GF) <strong>6</strong><br>
+                Pepino</p>
+            <p>ACHAAR (VG, GF) <strong>6</strong><br>
+                Rábanos encurtidos, zanahorias y mango verde hechos en casa</p>
+            <p><br></p>
+            <p>*Vegano o puede prepararse vegano. <br>
+                El consumo de carnes, aves, mariscos, mariscos o huevos crudos o poco cocidos puede aumentar el riesgo
+                de enfermedades transmitidas por los alimentos.</p>
+        </div>
+
+        <div id="postres" class="div-carta postres">
+            <h2>PASTELES Y TAL 14</h2>
+            <p>KULFI FALOODA <br>
+                Fideos con azafrán, semillas de albahaca y escaramujos</p>
+            <p>Pastel de zanahoria GAJAR HALWA <br>
+                , migas de pistacho, yogur helado de jengibre</p>
+            <p>SAFFRON JALEBI <br>
+                Rabdi aireado, pastel de leche, lichi</p>
+            <p>PELEA DE AMANTE <br>
+                Tarta Gulab Jamun, mermelada de albaricoque, perlas de caviar de pomelo, semillas de loto</p>
+            <p><br></p>
+            <h2>HELADOS Y SORBETES 10</h2>
+            <p>HELADO DE MASALA CHAI <strong>10</strong><br>
+                Crumble de chocolate blanco caramelizado</p>
+            <p>SORBET DE GUAYABA ROSA <strong>10</strong><br>
+                Sal De Chile, Caramelo De Guayaba</p>
+            <p>HELADO DE COCO tierno <strong>10</strong><br>
+                Piña escalfada al ron</p>
+            <p>HELADO DE MASALA CHAI <br>
+                Crumble de chocolate blanco caramelizado</p>
+            <p>SORBET DE GUAYABA ROSA <br>
+                Sal De Chile, Caramelo De Guayaba</p>
+            <p>HELADO DE COCO tierno <br>
+                Piña escalfada al ron</p>
+            <p><br></p>
+        </div>
+
+        <div id="bebidas" class="div-carta bebidas">
+            <h2>
+                ESPÍRITU ADELANTE
+            </h2>
+            <p>LA OTRA MUJER 25<br>
+            <p>Mezcal ilegal, whisky escocés Islay Laphroaig de 10 años, tintura de chile ojo de pájaro ennegrecido,
+                amargo de pomelo y agave.</p>
+
+            </p>
+            <p>
+                TAJ EMINENCE <strong>21</strong><br>
+                Ron Tanduay, Chinola, Hibiscus, Rose Combier, Lima
+            </p>
+            <p>
+                TAPACHE <strong>20</strong><br>
+                Dulce Vida, Jalapeño-Piña, Sandía, Lima, Agave, Curazao Azul
+            </p>
+            <p>
+                GOLD NEGRONI <strong>19</strong><br>
+                Ginebra Jaisalmer, Licor de Azafrán Especiado, Vermú Seco
+            </p>
+            <p>
+                75 pretendientes 20<br>
+                Hendricks Flora, Aperol, fresa, romero, limón, agua de rosa, simple, prosecco
+            </p>
+            <p>
+                SPICY CHILI MARGARITA 20<br>
+                Milagro Silver Tequila, Licor de Chile, Lima, Chile Ojo de Pájaro, Cilantro, Agave
+            </p>
+            <p> </p>
+            <h2>
+                ESPÍRITU TÍMIDO 14
+            </h2>
+            <p>
+                THE LYCHEE LIBRA <br>
+                Té de guisantes mariposa con infusión de romero, lichi y limonada
+            </p>
+            <p>
+                MANGO MALAI <br>
+                Puré de mango, yogur
+            </p>
+            <p>
+                KOKUM MOJITO <br>
+                Kokum, Menta, Lima, Simple, Soda
+            </p>
+            <p>
+                COCO-LICIOUS <br>
+                Puré de coco, lima, simple, cardamomo
+            </p>
+            <p><br></p>
+            <h2>
+                CERVEZA
+            </h2>
+            <p>
+                KINGFISHER PALE LAGER, ABV 4,8% | 8
+            </p>
+            <p>
+                FUNDADORES CENTENARIO IPA, ABV 7,2% | 9
+            </p>
+            <p>
+                SAISON DUPONT BELGIUM ALE, ABV 6,5% | 10
+            </p>
+            <p>
+                STELLA ARTOIS, ABV 5,2% | 8
+            </p>
+            <p>
+                HEINEKEN CERO, ABV 0,0% | 7
+            </p>
+            <h2><br></h2>
+            <h2>
+                VINO POR COPA
+            </h2>
+            <p>
+                ESPUMOSO
+            </p>
+            <p>
+                Jeio, Prosecco, Véneto, IT (NV) 19/75
+            </p>
+            <p>
+                Fiol Rosé, Prosecco, Véneto, IT (2020) 20/80
+            </p>
+            <p>
+                Louis de Sacy, Brut Originel, Champán, FR (NV) 27/108
+            </p>
+            <p><br></p>
+            <p>
+                ROSA
+            </p>
+            <p>
+                Peyrassol La Croix, Provance, FR (2021) Rosado 20/80
+            </p>
+            <p>
+                Le Roi Des Pierres Sancerre Rose, Valle del Loira, Francia (2021) Sancerre 22/88
+            </p>
+            <p><br></p>
+            <p>
+                BLANCO
+            </p>
+            <p>
+                Pago del Cielo, Rueda, SP (2020) Verdejo 18/72
+            </p>
+            <p>
+                Veramonte Sauvignon Blanc "Reserva" Valle de Casablanca, Chile (2021) 22/88
+            </p>
+            <p>
+                Viñedos Alta Maria, Valle de Santa María, CA (2021) Chardonnay 21/85
+            </p>
+            <p>
+                Casa Ferreirinha "Planalto" Reserva, Duero, Portugal (2021) Mezcla 19/76
+            </p>
+            <p><br></p>
+            <p>
+                ROJO
+            </p>
+            <p>
+                Christopher Lepage, Côte Saint Jacques, Borgoña, FR (2020) Pinot Noir 23/92
+            </p>
+            <p>
+                Domaine du Beaurenard, Côtes du Rhône, FR (2021) Garnacha/Syrah 21/85
+            </p>
+            <p>
+                Dirupi “Ole” Rosso di Valtellina, DOC IT (2022) Nebbiolo 23/92
+            </p>
+            <p>
+                Mezcla patentada HG III, Napa Valley, CA (2021) Mezcla Cabernet Sauvignon/ Merlot/ Petit Sirah 24/96
+            </p>
+        </div>
+        <footer id="footer" class="footer">
+            <p>&copy; 2024 Tu Restaurante. Todos los derechos reservados.</p>
+        </footer>
+
+    </main>
 
     <script src="scripts.js"></script> <!-- Si tienes algún archivo JavaScript -->
 </body>
+
 </html>

@@ -34,6 +34,7 @@ nav {
   flex-direction: column;
   transition: width 500ms ease;
 }
+
 body.active nav {
   width: 15rem;
 }
@@ -56,7 +57,8 @@ body.active nav {
   align-items: center;
   gap: 1.25rem;
 }
-.logo-wrapper > img {
+
+.logo-wrapper>img {
   width: 3.25rem;
   height: 3.25rem;
   background-color: #f4f4f6;
@@ -70,7 +72,8 @@ body.active nav {
   gap: 0.6rem;
   padding-top: 1.5rem;
 }
-nav > .sidebar-links {
+
+nav>.sidebar-links {
   border-top: 1px solid rgb(211, 211, 211);
 }
 
@@ -87,10 +90,12 @@ body.active .user-profile {
   border-radius: 0.5rem;
   gap: 1.5rem;
 }
+
 .hidden {
   display: none;
   cursor: auto;
 }
+
 body.active .hidden {
   display: inline;
 }
@@ -99,11 +104,12 @@ body.active .hidden {
 .link.active:hover {
   background-color: #e4e4e8;
 }
+
 .link.active {
   background-color: #f4f4f6;
 }
 
-.link > img {
+.link>img {
   width: 24px;
   height: 24px;
 }
@@ -120,6 +126,158 @@ body.active .hidden {
   align-items: center;
   transition: transform 0.25s ease;
 }
+
 body.active .toggle-btn {
   transform: rotate(180deg);
+}
+
+/* Estilos del Menu */
+
+
+.main-menu {
+  font-family: "Bodoni Moda", serif;
+  margin-left: 6%;
+  transition: 400ms;
+}
+
+.siderbar-activate {
+  margin-left: 18%;
+}
+
+.h1-menu {
+  text-align: center;
+  font-size: 5.5rem;
+  max-width: 80%;
+  margin: auto;
+}
+
+.div-tabs {
+  border-bottom: 1px solid #BBBBBB;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 90%;
+}
+
+.a-tabs {
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.a-tabs:before {
+  content: "";
+  width: 0;
+  margin: auto;
+  position: absolute;
+  background: #121212;
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  transition: 400ms;
+}
+
+.a-tabs:hover {
+  opacity: 1;
+}
+
+.a-tabs:hover:before,
+.active::before {
+  width: 100%;
+}
+
+.entradas {
+  display: none;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.principal {
+  display: none;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.postres {
+  display: none;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.bebidas {
+  display: none;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.show {
+  display: block;
+  animation: fade_in_show 0.7s
+}
+
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    /* transform: scale(0) */
+  }
+
+  100% {
+    opacity: 1;
+    /* transform: scale(1) */
+  }
+}
+
+.footer {
+  text-align: center;
+}
+@media screen and (width < 950px) {
+  .toggle-btn {
+    display: none;
+  }
+}
+
+@media screen and (width < 600px) {
+  .h1-menu {
+    max-width: 50%;
+    font-size: 2rem;
+  }
+  .div-tabs {
+    max-width: 70%;
+  }
+  .a-tabs {
+    font-size: .5rem;
+    margin: 0px 10px;
+  }
+  h2{
+    font-size: 0.9rem;
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  .entradas{
+    max-width: 60%;
+  }
+  .principal{
+    max-width: 60%;
+  }
+  .postres{
+    max-width: 60%;
+  }
+  .bebidas{
+    max-width: 60%;
+  }
+  nav{
+    width: 3rem;
+  }
+
 }
