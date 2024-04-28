@@ -126,3 +126,17 @@ body.active .toggle-btn {
   transform: rotate(180deg);
 }
 
+@media (max-width: 920px) {
+  .toggle-btn {
+      display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  nav {
+      width: 3rem;
+      order: 1; 
+  }
+
+}
+

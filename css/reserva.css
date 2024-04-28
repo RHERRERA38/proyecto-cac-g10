@@ -48,6 +48,7 @@ section {
     align-items: center;
     justify-content: center;
     width: 50%;
+    min-width: 410px;
     margin: auto;
     background-color: var(--section-bg-color);
     padding: 20px;
@@ -80,7 +81,7 @@ select:invalid {
 
 .form-control textarea {
     margin: 10px 0;
-    width: 50vh;
+    width: 40vh;
     height: 70%;
     border-radius: 15px;
     border: none;
@@ -93,7 +94,7 @@ select:invalid {
 
 form button {
     margin: 10px 0;
-    width: 100%;
+    width: 40vh;
     height: 40px; 
     border-radius: 20px;
     border: none;
@@ -114,4 +115,25 @@ form button {
 
 .form-control input.error, .form-select.error {
     border: 2px solid var(--error-color); 
+}
+
+@media (max-width: 640px) {
+
+    section.reserv-form {
+        width: 30vw; 
+        order: 2;
+    }
+}
+
+@media (max-width: 530px) {
+
+    section.reserv-form {
+        width: 30vh; 
+        order: 2;
+    }
+
+    section {
+        margin-left: 3rem;
+        
+    }
 }

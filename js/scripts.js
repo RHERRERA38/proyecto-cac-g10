@@ -59,5 +59,6 @@ btnReserva.addEventListener('click', function() {
         errorsede.innerHTML = 'Debe seleccionar una sede';
     }
 
-
 })
+
+//Fin de scripts para formulario de reservas
