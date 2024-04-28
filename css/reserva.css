@@ -1,0 +1,117 @@
+/*Estilos aplicados a la página reservas.html
+Los estilos comunes del sitio deben ser aplicados en styles.css*/
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root{
+    /*paleta de colores*/
+    --primary-color:#efb810;
+    --secondary-color:#f7d99c;
+    --third-color:#e8a344;
+    --fourth-color:#d97a1f;
+    --fifth-color:#a83504;
+    /*Otros colores a definir*/
+    --h2-color: black;
+    --section-bg-color: rgba(255, 215, 255, 0.2);
+    --box-shadow-color: rgba(0, 0, 0, 0.15);
+    --select-invalid-color: #808080; 
+    --error-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body.reserv-page {
+    background-image: url("/assets/img/rest5.jpg");
+    background-image: center;
+    background-size: cover;
+    
+}
+
+h1 { 
+    text-align: center;
+}
+
+section h2 {
+    text-align: center;
+    color: var(--h2-color); /*Ajustar al color definido por el grupo*/
+    padding-bottom: 6px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    background-color: var(--section-bg-color);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form-control input, select{
+    margin: 10px 0;
+    width: 40vh;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 5px 10px var(--box-shadow-color);
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+    font-family: Poppins, sans-serif;
+}
+
+select:invalid {
+    color: var(--select-invalid-color);
+}
+
+
+.form-control textarea {
+    margin: 10px 0;
+    width: 50vh;
+    height: 70%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 10px var(--box-shadow-color);
+    resize: none;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+    font-family: Poppins, sans-serif;
+}
+
+form button {
+    margin: 10px 0;
+    width: 100%;
+    height: 40px; 
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 5px 10px var(--box-shadow-color);
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+    background-color: var(--primary-color); 
+    color: var(--h2-color); 
+    font-size: 1em; 
+    cursor: pointer; 
+    text-align: center;
+}
+
+.error {
+    color: var(--error-color);
+    margin-bottom: 5px;
+}
+
+.form-control input.error, .form-select.error {
+    border: 2px solid var(--error-color); 
+}
