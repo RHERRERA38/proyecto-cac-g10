@@ -64,7 +64,7 @@ form {
 
 .form-control input, select{
     margin: 10px 0;
-    width: 40vh;
+    width: 330px;
     height: 40px;
     border-radius: 20px;
     border: none;
@@ -78,10 +78,9 @@ select:invalid {
     color: var(--select-invalid-color);
 }
 
-
 .form-control textarea {
     margin: 10px 0;
-    width: 40vh;
+    width: 330px;
     height: 70%;
     border-radius: 15px;
     border: none;
@@ -94,7 +93,7 @@ select:invalid {
 
 form button {
     margin: 10px 0;
-    width: 40vh;
+    width: 330px;
     height: 40px; 
     border-radius: 20px;
     border: none;
@@ -134,6 +133,6 @@ form button {
 
     section {
         margin-left: 3rem;
-        
+
     }
 }
