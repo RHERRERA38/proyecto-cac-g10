@@ -47,7 +47,7 @@ const main = document.querySelector(".main-menu");
 
 sidebarBtn.addEventListener("click", () => {
   document.body.classList.toggle("active");
-  //main.classList.toggle("siderbar-activate");
+  main.classList.toggle("siderbar-activate");
 });
 
 // Menu
