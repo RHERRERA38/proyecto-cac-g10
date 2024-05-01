@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+/*paleta de colores*/
+:root {
+  --primary-color: #efb810;
+  --secondary-color: #f7d99c;
+  --third-color: #e8a344;
+  --fourth-color: #d97a1f;
+  --fifth-color: #a83504;
+  /*Otros colores a definir*/
+  --h2-color: black;
+  --section-bg-color: rgba(255, 215, 255, 0.2);
+  --box-shadow-color: rgba(0, 0, 0, 0.15);
+  --select-invalid-color: #808080;
+  --error-color: red;
+}
+
 *,
 *::before,
 *::after {
@@ -152,7 +167,7 @@ body.active .toggle-btn {
 }
 
 .div-tabs {
-  border-bottom: 1px solid #BBBBBB;
+  border-bottom: .1rem solid var(--third-color);
   display: flex;
   justify-content: center;
   margin: auto;
@@ -160,7 +175,7 @@ body.active .toggle-btn {
 }
 
 .a-tabs {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   text-decoration: none;
   padding: 20px 0px;
@@ -175,8 +190,8 @@ body.active .toggle-btn {
   width: 0;
   margin: auto;
   position: absolute;
-  background: #121212;
-  height: 1px;
+  background-color: var(--third-color);
+  height: 0.1rem;
   left: 0;
   right: 0;
   bottom: 15px;
@@ -190,6 +205,15 @@ body.active .toggle-btn {
 .a-tabs:hover:before,
 .active::before {
   width: 100%;
+}
+
+.borderMenu {
+  border: 2rem solid var(--third-color);
+  border-image: url(./assets/bordeMenu.png);
+  border-image-slice: 88;
+  border-image-repeat: round;
+  max-width: 90%;
+  margin: auto;
 }
 
 .entradas {
@@ -240,9 +264,14 @@ body.active .toggle-btn {
 .footer {
   text-align: center;
 }
+
 @media screen and (width < 950px) {
   .toggle-btn {
     display: none;
+  }
+
+  .a-tabs {
+    font-size: 1rem;
   }
 }
 
@@ -251,32 +280,41 @@ body.active .toggle-btn {
     max-width: 50%;
     font-size: 2rem;
   }
+
   .div-tabs {
     max-width: 70%;
   }
+
   .a-tabs {
-    font-size: .5rem;
+    font-size: .8rem;
     margin: 0px 10px;
   }
-  h2{
+
+  h2 {
     font-size: 0.9rem;
   }
-  p{
+
+  p {
     font-size: 0.8rem;
   }
-  .entradas{
+
+  .entradas {
     max-width: 60%;
   }
-  .principal{
+
+  .principal {
     max-width: 60%;
   }
-  .postres{
+
+  .postres {
     max-width: 60%;
   }
-  .bebidas{
+
+  .bebidas {
     max-width: 60%;
   }
-  nav{
+
+  nav {
     width: 3rem;
   }
 

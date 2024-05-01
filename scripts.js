@@ -1,10 +1,53 @@
+
+const header = `
+   <ul class="nav">
+    <li><a href="/home">Home</a></li>
+    <li><a href="/js">Javascript</a></li>
+   </ul>`
+
+const navbar = `
+<nav>
+<div class="sidebar-header">
+    <a class="logo-wrapper">
+        <img src="./assets/logo.svg" alt="Logo">
+        <h2 class="hidden">LOGO</h2>
+    </a>
+    <button class="toggle-btn">
+        <img src="./assets/expand.svg" alt="expand button">
+    </button>
+</div>
+
+
+<div class="sidebar-links">
+    <a class="link" href="index.html">
+        <img src="./assets/home.svg" alt="">
+        <span class="hidden">Inicio</span>
+    </a>
+    <a class="link" href="menu.html">
+        <img src="./assets/menu.svg" alt="">
+        <span class="hidden">Menu</span>
+    </a>
+    <a class="link" href="reservas.html">
+        <img src="./assets/reservas.svg" alt="">
+        <span class="hidden">Reservas</span>
+    </a>
+    </li>
+    <a class="link" href="contacto.html">
+        <img src="./assets/ubicacion.svg" alt="">
+        <span class="hidden">Ubicación y Contacto</span>
+    </a>
+</div>
+</nav>`;
+document.querySelector("body").insertAdjacentHTML("afterbegin", navbar);
+
+
 const sidebarBtn = document.querySelector(".toggle-btn");
-const sidebar = document.querySelector("aside");
+//const sidebar = document.querySelector("aside");
 const main = document.querySelector(".main-menu");
 
 sidebarBtn.addEventListener("click", () => {
   document.body.classList.toggle("active");
-  main.classList.toggle("siderbar-activate");
+  //main.classList.toggle("siderbar-activate");
 });
 
 // Menu
