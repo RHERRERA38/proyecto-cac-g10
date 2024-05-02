@@ -2,6 +2,8 @@
 Los estilos comunes del sitio deben ser aplicados en styles.css*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 :root{
     /*paleta de colores*/
@@ -22,23 +24,26 @@ Los estilos comunes del sitio deben ser aplicados en styles.css*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Poppins, sans-serif;
+    font-family: 'Bodoni Moda', sans-serif;
 }
 
 body.reserv-page {
+    height: 100vh;
     background-image: url("/assets/img/rest5.jpg");
     background-image: center;
     background-size: cover;
     
 }
 
+
 h1 { 
     text-align: center;
+    font-family: Limelight;
 }
 
 section h2 {
     text-align: center;
-    color: var(--h2-color); /*Ajustar al color definido por el grupo*/
+    color: var(--h2-color); 
     padding-bottom: 6px;
 }
 
@@ -71,7 +76,12 @@ form {
     box-shadow: 0 5px 10px var(--box-shadow-color);
     padding: 10px;
     transition: box-shadow 0.3s ease;
-    font-family: Poppins, sans-serif;
+    font-family: 'Bodoni Moda', sans-serif;
+}
+
+input:focus {
+    border-color: var(--primary-color);
+    
 }
 
 select:invalid {
@@ -88,7 +98,7 @@ select:invalid {
     resize: none;
     padding: 10px;
     transition: box-shadow 0.3s ease;
-    font-family: Poppins, sans-serif;
+    font-family: 'Bodoni Moda', sans-serif;
 }
 
 form button {
@@ -107,6 +117,12 @@ form button {
     text-align: center;
 }
 
+button:hover {
+    background-color: var(--fifth-color);
+    color: var(--primary-color);
+
+}
+
 .error {
     color: var(--error-color);
     margin-bottom: 5px;
@@ -114,6 +130,14 @@ form button {
 
 .form-control input.error, .form-select.error {
     border: 2px solid var(--error-color); 
+}
+
+footer {
+    text-align: center;
+}
+
+footer .log-footer {
+    font-family: Limelight;
 }
 
 @media (max-width: 640px) {
