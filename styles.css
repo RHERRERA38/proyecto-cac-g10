@@ -209,7 +209,7 @@ body.active .toggle-btn {
 
 .borderMenu {
   border: 2rem solid var(--third-color);
-  border-image: url(./assets/bordeMenu.png);
+  border-image: url(./assets/img/bordeMenu.png);
   border-image-slice: 88;
   border-image-repeat: round;
   max-width: 90%;
