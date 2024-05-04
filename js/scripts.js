@@ -1,38 +1,29 @@
-
-const header = `
-   <ul class="nav">
-    <li><a href="/home">Home</a></li>
-    <li><a href="/js">Javascript</a></li>
-   </ul>`
-
 const navbar = `
 <nav>
 <div class="sidebar-header">
     <a class="logo-wrapper">
-        <img src="./assets/img/rest-logo.jpg" alt="Logo">
+        <img src="./assets/img/logof-192x192.png" alt="Logo">
         <h2 class="hidden">BISTRO</h2>
     </a>
     <button class="toggle-btn">
         <img src="./assets/svg/expand.svg" alt="expand button">
     </button>
 </div>
-
-
 <div class="sidebar-links">
-    <a class="link" href="index.html">
+    <a class="link" href="/index.html">
         <img src="./assets/svg/home.svg" alt="">
         <span class="hidden">Inicio</span>
     </a>
-    <a class="link" href="menu.html">
+    <a class="link" href="/menu.html">
         <img src="./assets/svg/menu.svg" alt="">
-        <span class="hidden">Menu</span>
+    <span class="hidden">Menu</span>
     </a>
-    <a class="link" href="reservas.html">
+    <a class="link" href="/reservas.html">
         <img src="./assets/svg/reservas.svg" alt="">
         <span class="hidden">Reservas</span>
     </a>
     </li>
-    <a class="link" href="contacto.html">
+    <a class="link" href="/contacto.html">
         <img src="./assets/svg/ubicacion.svg" alt="">
         <span class="hidden">Ubicación y Contacto</span>
     </a>
