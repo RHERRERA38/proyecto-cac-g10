@@ -1,28 +1,17 @@
 @import url('./main.css');
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-
-  display: flex;
-  flex-direction: column;
-  background-color: #e4e3e8;
-  padding: 0.375rem;
-  font-family: 'Bodoni Moda', sans-serif;
-  position: relative;
-}
-
-button,
+.toggle-btn,
 a {
   all: unset;
   font: inherit;
   cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: var(--fifth-color);
+  color: var(--primary-color);
+
 }
 
 nav {
