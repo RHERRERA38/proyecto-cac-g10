@@ -1,19 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("./main.css");
 
-/*paleta de colores*/
-:root {
-  --primary-color: #efb810;
-  --secondary-color: #f7d99c;
-  --third-color: #e8a344;
-  --fourth-color: #d97a1f;
-  --fifth-color: #a83504;
-  /*Otros colores a definir*/
-  --h2-color: black;
-  --section-bg-color: rgba(255, 215, 255, 0.2);
-  --box-shadow-color: rgba(0, 0, 0, 0.15);
-  --select-invalid-color: #808080;
-  --error-color: red;
-}
+
 
 *,
 *::before,
@@ -209,7 +196,7 @@ body.active .toggle-btn {
 
 .borderMenu {
   border: 2rem solid var(--third-color);
-  border-image: url(./assets/img/bordeMenu.png);
+  border-image: url(../assets/img/bordeMenu.png);
   border-image-slice: 88;
   border-image-repeat: round;
   max-width: 90%;
