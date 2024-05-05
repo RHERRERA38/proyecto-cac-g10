@@ -21,7 +21,7 @@ Los estilos comunes del sitio deben ser aplicados en styles.css*/
 }
 
 
-*,
+
 *::before,
 *::after {
     margin: 0;
