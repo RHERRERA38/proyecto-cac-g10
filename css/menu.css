@@ -1,7 +1,28 @@
+:root {
+  /*paleta de colores*/
+  --primary-color: #efb810;
+  --secondary-color: #f7d99c;
+  --third-color: #e8a344;
+  --fourth-color: #d97a1f;
+  --fifth-color: #a83504;
+  /*Otros colores a definir*/
+  --h2-color: black;
+  --section-bg-color: rgba(255, 215, 255, 0.2);
+  --box-shadow-color: rgba(0, 0, 0, 0.15);
+  --select-invalid-color: #808080;
+  --error-color: red;
+}
+
 .body-menu {
   background-image: url(../assets/img/fondoMenu.jpeg);
   background-size: auto;
   background-repeat: repeat;
+}
+
+.toggle-btn:hover {
+  background-color: var(--fifth-color);
+  color: var(--primary-color);
+
 }
 
 
@@ -95,7 +116,7 @@
   font-size: 2.2rem;
 }
 
-.p-menu{
+.p-menu {
   font-size: 1.4rem;
 }
 
@@ -149,36 +170,44 @@
 }
 
 @media screen and (width < 1367px) {
-.p-menu{
-  font-size: 1.2rem;
-}
-.a-tabs {
-  font-size: 1.5rem;
-}
-.h1-menu {
-  font-size: 5.5rem;
-}
-.h2-menu {
-  font-size: 1.5rem;
-}
+  .p-menu {
+    font-size: 1.2rem;
+  }
+
+  .a-tabs {
+    font-size: 1.5rem;
+  }
+
+  .h1-menu {
+    font-size: 5.5rem;
+  }
+
+  .h2-menu {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (width < 950px) {
   .toggle-btn {
     display: none;
   }
+
   .a-tabs {
     font-size: 1rem;
   }
-  .div-tabs{
+
+  .div-tabs {
     max-width: 80%;
   }
-  .borderMenu{
+
+  .borderMenu {
     max-width: 80%;
   }
-  .p-menu{
+
+  .p-menu {
     font-size: 1rem;
   }
+
   .h1-menu {
     max-width: 60%;
     font-size: 2.5rem;
@@ -227,7 +256,8 @@
   nav {
     width: 3rem;
   }
-  .borderMenu{
+
+  .borderMenu {
     max-width: 75%;
   }
 
@@ -275,7 +305,8 @@
   nav {
     width: 3rem;
   }
-  .borderMenu{
+
+  .borderMenu {
     max-width: 85%;
   }
 
