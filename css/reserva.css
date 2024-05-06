@@ -1,9 +1,6 @@
 /*Estilos aplicados a la página reservas.html
 Los estilos comunes del sitio deben ser aplicados en styles.css*/
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 
 :root{
     /*paleta de colores*/
@@ -27,40 +24,48 @@ Los estilos comunes del sitio deben ser aplicados en styles.css*/
     font-family: 'Bodoni Moda', sans-serif;
 }
 
+#form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 body.reserv-page {
     height: 100vh;
-    background-image: url("/assets/img/rest5.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/assets/img/rest5.jpg");
     background-image: center;
     background-size: cover;
-    
 }
 
-
-h1 { 
+#name-rest { 
     text-align: center;
     font-family: Limelight;
+    font-size: 4em;
 }
 
-section h2 {
+.section-header h2 {
     text-align: center;
     color: var(--h2-color); 
     padding-bottom: 6px;
 }
 
-section {
+.section-header, .reserv-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 50%;
-    min-width: 410px;
+    max-width: 600px;
+    min-width: 30vw;
+    padding-bottom: 0;
     margin: auto;
     background-color: var(--section-bg-color);
     padding: 20px;
     border-radius: 20px;
 }
 
-form {
+.reserv-form form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,20 +73,27 @@ form {
 
 
 .form-control input, select{
-    margin: 10px 0;
-    width: 330px;
-    height: 40px;
+    margin: 5px 0;
+    width: 25vw;
+    max-width: 350px;
+    height: auto;
     border-radius: 20px;
     border: none;
+    outline-color: #efb810;
     box-shadow: 0 5px 10px var(--box-shadow-color);
-    padding: 10px;
+    padding: 8px;
     transition: box-shadow 0.3s ease;
     font-family: 'Bodoni Moda', sans-serif;
 }
 
-input:focus {
-    border-color: var(--primary-color);
+#reserv-text {
+    width: 30vw;
     
+}
+
+
+.form-control input:focus {
+    border-color: var(--primary-color);
 }
 
 select:invalid {
@@ -90,10 +102,12 @@ select:invalid {
 
 .form-control textarea {
     margin: 10px 0;
-    width: 330px;
+    width: 25vw;
+    max-width: 350px;
     height: 70%;
     border-radius: 15px;
     border: none;
+    outline-color: #efb810;
     box-shadow: 0 5px 10px var(--box-shadow-color);
     resize: none;
     padding: 10px;
@@ -101,13 +115,20 @@ select:invalid {
     font-family: 'Bodoni Moda', sans-serif;
 }
 
-form button {
+.form-news {
+    width: 30vw;
+    text-align: center;
+    color:black;
+}
+
+#btn-reserva {
     margin: 10px 0;
-    width: 330px;
-    height: 40px; 
+    width: 25vw;
+    max-width: 330px;
+    height: 4vh; 
     border-radius: 20px;
     border: none;
-    box-shadow: 0 5px 10px var(--box-shadow-color);
+    box-shadow: 0 0 10px var(--box-shadow-color);
     padding: 10px;
     transition: box-shadow 0.3s ease;
     background-color: var(--primary-color); 
@@ -117,7 +138,7 @@ form button {
     text-align: center;
 }
 
-button:hover {
+#btn-reserva:hover {
     background-color: var(--fifth-color);
     color: var(--primary-color);
 
@@ -134,29 +155,132 @@ button:hover {
 
 footer {
     text-align: center;
+    margin-top: auto;
+    color:beige
 }
 
 footer .log-footer {
     font-family: Limelight;
 }
 
-@media (max-width: 640px) {
+/*Estilos Para pantallas entre 900px y 1280px de ancho*/
 
-    section.reserv-form {
-        width: 30vw; 
-        order: 2;
+@media screen and (min-width: 900px) and (max-width: 1280px) {
+
+    #name-rest { 
+        font-size: 3em;
+    }
+
+    .section-header, .reserv-form {
+        width: 70vw;
+    }
+    
+    .form-control input, select {
+        width: 70vw;
+    }
+
+    .form-control textarea {
+        width: 70vw;
+    }
+
+    #btn-reserva {
+        width: 70vw;
+    }
+
+    .form-news {
+        width: 30vw;
+    }
+
+}
+
+
+@media screen and (min-width: 640px) and (max-width: 900px) {
+    #name-rest { 
+        font-size: 2em;
+    }
+    
+    .section-header h2 {
+        font-size: 1em;
+    }
+
+    .section-header, .reserv-form {
+        width: 90vw;
+        margin-left: 15vw;
+    }
+
+    .section-header {
+        padding-bottom: 10px;
+    }
+
+    .reserv-form {
+        padding-top: 10px;
+    }
+
+    .form-control input, select {
+        width: 90vw;
+        /*font-size: 0.75em;*/
+    }
+
+    .form-control textarea {
+        width: 90vw;
+    }
+
+    #btn-reserva {
+        width: 90vw;
+    }
+
+    #reserv-text {
+        width: 50vw;
+        font-size: 0.9em;
+    }
+
+    .form-news {
+        width: 50vw;
+        font-size: 0.9em;
     }
 }
 
-@media (max-width: 530px) {
-
-    section.reserv-form {
-        width: 30vh; 
-        order: 2;
+@media screen and (max-width: 640px) {
+    #name-rest { 
+        font-size: 1.5em;
     }
 
-    section {
-        margin-left: 3rem;
+    .section-header h2 {
+        font-size: 1em;
+    }
+    
+    .section-header, .reserv-form {
+        width: 80vw;
+        margin-left: 15vw;
+    }
 
+    .section-header {
+        padding-bottom: 10px;
+    }
+
+    .reserv-form {
+        padding-top: 10px;
+    }
+
+    .form-control input, select {
+        width: 60vw;
+    }
+
+    .form-control textarea {
+        width: 60vw;
+    }
+
+    #btn-reserva {
+        width: 60vw;
+    }
+
+    #reserv-text {
+        width: 60vw;
+        font-size: 0.9em;
+    }
+
+    .form-news {
+        width: 60vw;
+        font-size: 0.9em;
     }
 }

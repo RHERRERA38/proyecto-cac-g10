@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
-
+/*Hoja de Estilos Comunes a la Barra Lateral*/
 *,
 *::before,
 *::after {
@@ -63,7 +60,7 @@ body.active nav {
 .logo-wrapper > img {
   width: 3.25rem;
   height: 3.25rem;
-  background-color: rgba(255, 215, 255, 0.2);
+  background-color: transparent;
   padding: 0.4rem;
   border-radius: 0.5rem;
 }
@@ -109,7 +106,7 @@ body.active .hidden {
 
 .link:hover,
 .link.active:hover {
-  background-color: #e4e4e8;
+  background-color: #efb810;;
 }
 .link.active {
   background-color: #f4f4f6;
@@ -146,6 +143,12 @@ body.active .toggle-btn {
   nav {
       width: 3rem;
       order: 1; 
+  }
+
+  .logo-wrapper > img {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.2rem;
   }
 
 }
