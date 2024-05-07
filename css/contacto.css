@@ -1,0 +1,125 @@
+/* Estilos Generales */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bodoni Moda', serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Barra de Navegación Lateral */
+nav {
+    width: 200px;
+    height: 100vh;
+    background-color: #212529;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    transition: width 0.5s;
+}
+
+.sidebar-header {
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.logo-wrapper img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sidebar-links a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.sidebar-links a:hover {
+    background-color: #495057;
+}
+
+.toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: -40px;
+    background: #343a40;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-btn img {
+    width: 20px;
+}
+
+main {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.active main {
+    margin-left: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 50px;
+    }
+
+    .sidebar-header h2, .sidebar-links span {
+        display: none;
+    }
+
+    main {
+        margin-left: 50px;
+    }
+
+    .active main {
+        margin-left: 0;
+    }
+
+    .toggle-btn {
+        right: 5px;
+    }
+}
+
+main.main-menu {
+    transition: margin-left 0.5s; /* Transición suave al cambiar el margen */
+}
+
+/* Ajustar el margen cuando la barra está activa */
+body.active main.main-menu {
+    margin-left: 50px; /* Asume que la barra colapsa a 50px */
+}
+
+@media (max-width: 768px) {
+    main.main-menu {
+        margin-left: 0; /* No margin when the sidebar is not visible on mobile */
+    }
+
+    body.active main.main-menu {
+        margin-left: 0; /* No margin when sidebar is active or inactive in mobile view */
+    }
+}
