@@ -40,6 +40,12 @@
     background-repeat: repeat; */
 }
 
+.h1-index {
+    text-align: center;
+    font-family: Limelight;
+    font-size: 4em;
+}
+
 .uk-slidenav {
     color: var(--fifth-color);
 }
