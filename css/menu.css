@@ -14,9 +14,8 @@
 }
 
 .body-menu {
-  background-image: url(../assets/img/fondoMenu.jpeg);
-  background-size: auto;
-  background-repeat: repeat;
+  background-image: url(../assets/img/rest5.jpg);
+
 }
 
 .toggle-btn:hover {
@@ -35,7 +34,7 @@
 }
 
 
-.main-menu {
+.main {
   margin-left: 6%;
   transition: 400ms;
 }

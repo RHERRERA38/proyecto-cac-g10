@@ -34,7 +34,7 @@ document.querySelector("body").insertAdjacentHTML("afterbegin", navbar);
 
 const sidebarBtn = document.querySelector(".toggle-btn");
 //const sidebar = document.querySelector("aside");
-const main = document.querySelector(".main-menu");
+const main = document.querySelector(".main");
 
 sidebarBtn.addEventListener("click", () => {
   document.body.classList.toggle("active");

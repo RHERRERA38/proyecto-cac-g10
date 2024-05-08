@@ -1,0 +1,62 @@
+/* .slide {
+    margin-left: 30%;
+    width: 50%;
+} */
+
+:root {
+    /*paleta de colores*/
+    --primary-color: #efb810;
+    --secondary-color: #f7d99c;
+    --third-color: #e8a344;
+    --fourth-color: #d97a1f;
+    --fifth-color: #a83504;
+    /*Otros colores a definir*/
+    --h2-color: black;
+    --section-bg-color: rgba(255, 215, 255, 0.2);
+    --box-shadow-color: rgba(0, 0, 0, 0.15);
+    --select-invalid-color: #808080;
+    --error-color: red;
+}
+
+.toggle-btn:hover {
+    background-color: var(--fifth-color);
+    color: var(--primary-color);
+
+}
+
+.main {
+    margin-left: 13%;
+    transition: 400ms;
+}
+
+.siderbar-activate {
+    margin-left: 29%;
+}
+
+.body-index {
+    background-color: var(--secondary-color);
+    /* background-image: url(../assets/img/fondoMenu.jpeg);
+    background-size: auto;
+    background-repeat: repeat; */
+}
+
+.uk-slidenav {
+    color: var(--fifth-color);
+}
+
+.uk-slidenav:hover {
+    color: var(--primary-color);
+}
+
+.uk-icon {
+    font-size: 1rem;
+}
+
+.footer {
+    text-align: center;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+}
