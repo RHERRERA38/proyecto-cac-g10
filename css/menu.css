@@ -14,7 +14,7 @@
 }
 
 .body-menu {
-  background-image: url(../assets/img/rest5.jpg);
+  background-image: url(../assets/img/fondoMenu.jpeg);
 
 }
 
@@ -36,7 +36,7 @@
 
 .main {
   margin-left: 6%;
-  transition: 400ms;
+  transition: 500ms;
 }
 
 .siderbar-activate {

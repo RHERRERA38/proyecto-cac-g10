@@ -25,26 +25,46 @@
 }
 
 .main {
-    margin-left: 13%;
-    transition: 400ms;
+    transition: 500ms;
 }
 
 .siderbar-activate {
-    margin-left: 29%;
+    margin-left: 13%;
 }
 
 .body-index {
-    background-color: var(--secondary-color);
+    background-color: black;
     /* background-image: url(../assets/img/fondoMenu.jpeg);
     background-size: auto;
     background-repeat: repeat; */
 }
 
+.hidden {
+    color: black;
+}
+
+.section-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide {
+    width: 93%;
+    margin-left: 6%;
+}
+
 .h1-index {
+    margin-top: 2%;
+    margin-left: 5%;
     text-align: center;
     font-family: Limelight;
     font-size: 4em;
 }
+
+/* .uk-slideshow {
+    margin-top: 5%;
+} */
 
 .uk-slidenav {
     color: var(--fifth-color);
@@ -60,6 +80,7 @@
 
 .footer {
     text-align: center;
+    color: #333;
 }
 
 svg {
