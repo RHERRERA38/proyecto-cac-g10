@@ -1,0 +1,61 @@
+/*Estilos aplicados a la página Index.html
+Los estilos comunes del sitio deben ser aplicados en styles.css*/
+
+:root{
+    /*paleta de colores*/
+    --primary-color:#efb810;
+    --secondary-color:#f7d99c;
+    --third-color:#e8a344;
+    --fourth-color:#d97a1f;
+    --fifth-color:#a83504;
+    /*Otros colores a definir*/
+    --h2-color: black;
+    --section-bg-color: rgba(255, 215, 255, 0.2);
+    --box-shadow-color: rgba(0, 0, 0, 0.15);
+    --select-invalid-color: #808080; 
+    --error-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bodoni Moda', sans-serif;
+}
+
+.welcome-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image:  linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/img/rest6.jpg");
+    background-image: center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+.welcome-container h1 {
+    font-family: Limelight;
+    font-size: 8em;
+    padding-top: 200px;
+    color:beige; 
+}
+
+.subtitule {
+    color: beige;
+    font-size: 2em;
+}
+
+.description-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.description-text {
+    width: 50vw; 
+}
+
+.description-image img {
+    background-size: 200px;
+}

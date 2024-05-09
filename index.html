@@ -1,49 +1,84 @@
+<!-- Página de Inicio -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurante - Inicio</title>
-    <link rel="shortcut icon" href="/assets/img/rest-logo.jpg" type="image/x-icon">
+    <title>BISTRO - Bienvenidos</title>
+    <link rel="shortcut icon" href="/assets/img/logof.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <nav>
-        <div class="sidebar-header">
-            <a class="logo-wrapper">
-                <img src="./assets/img/rest-logo.jpg" alt="Logo">
-                <h2 class="hidden">LENOIR</h2>
-            </a>
-            <button class="toggle-btn">
-                <img src="./assets/svg/expand.svg" alt="expand button">
-            </button>
-        </div>
+<body class="index-page">
+    
+    <main class="index-container">
+
+        <section class="welcome-container">
+            <h1>BISTRO</h1>
+            <p><span class="subtitule">ARTE CULINARIO INTERNACIONAL</span></p>
+
+        </section>
+        <section class="description-container">
+            <div class="description-text">
+                <h2>EL RESTAURANT</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente odio, odit molestias nostrum sunt, eligendi doloribus illum dolorem provident corrupti architecto, eius ex nemo officiis ad vitae! Minima, ad eum!</p>
+                <button class="btn-1">NUESTRA CARTA</button>
+            </div>
+            <div class="description-image">
+                <img src="/assets/img/restia3.jpeg" alt="Interior del RESTAURANT">
+
+            </div>
+        </section>
+        <section class="gallery-container">
+            <!-- Aqui deberia ir el carrusel de imágenes -->
 
 
-        <div class="sidebar-links">
-            <a class="link active" href="#">
-                <img src="./assets/svg/home.svg" alt="">
-                <span class="hidden">Inicio</span>
-            </a>
-            <a class="link" href="/menu.html">
-                <img src="./assets/svg/menu.svg" alt="">
-                <span class="hidden">Menu</span>
-            </a>
-            <a class="link" href="/reservas.html">
-                <img src="./assets/svg/reservas.svg" alt="">
-                <span class="hidden">Reservas</span>
-            </a>
-            </li>
-            <a class="link" href="/contacto.html">
-                <img src="./assets/svg/ubicacion.svg" alt="">
-                <span class="hidden">Ubicación y Contacto</span>
-            </a>
-        </div>
-    </nav>
+        </section>
+
+        <section class="ambients-container">
+            <div class="ambient-image">
+                <img src="/assets/img/terraza2.jpeg" alt="Ambiente del Restaurant">
+            </div>
+            <div class="ambient-text">
+                <h2>AMBIENTES</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur ipsa doloremque eaque nam fugit cumque dolorum enim facere eius iste saepe unde minima autem fugiat, dolores accusamus excepturi vero.</p>
+            </div>
+            <button class="btn-1">RESERVE SU MESA</button>
+        </section>
+        
+        <section class="location-container">
+            <div class="location-text">
+                <h2>UBICACIÓN</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis amet reprehenderit iure. Alias animi culpa minima optio laudantium iusto ipsa. Quisquam esse, tempore voluptatum dicta voluptates fuga rerum exercitationem?</p>
+                
+            </div>
+            <div class="location-image">
+                <img src="/assets/img/fachada1.jpeg" alt="Locacion">
+            </div>
+            <button class="btn-1">NUESTROS LOCALES</button>
+        </section>
+        <section class="payment">
+            <div>
+                <img src="/assets/img/payment2.png" alt="pagos">
+            </div>
+
+        </section>
+
+        <script src="/js/scripts.js" defer></script>
+    </main>
+
+
+    <footer id="footer" class="footer">
+        <p>&copy; 2024 <span class="log-footer">BISTRO</span> Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 
-<script src="/js/scripts.js" defer></script>
+
 
 </html>
