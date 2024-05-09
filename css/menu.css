@@ -44,8 +44,9 @@
 }
 
 .h1-menu {
+  font-family: Limelight;
   text-align: center;
-  font-size: 6.5rem;
+  font-size: 6rem;
   max-width: 50%;
   margin: auto;
   background-color: rgb(255, 255, 255, 0.5);
@@ -178,7 +179,7 @@
   }
 
   .h1-menu {
-    font-size: 5.5rem;
+    font-size: 5rem;
   }
 
   .h2-menu {
