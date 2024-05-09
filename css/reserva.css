@@ -11,7 +11,7 @@ Los estilos comunes del sitio deben ser aplicados en styles.css*/
     --fifth-color:#a83504;
     /*Otros colores a definir*/
     --h2-color: black;
-    --section-bg-color: rgba(255, 215, 255, 0.2);
+    --section-bg-color: rgba(255, 255, 255, 0.2);
     --box-shadow-color: rgba(0, 0, 0, 0.15);
     --select-invalid-color: #808080; 
     --error-color: red;

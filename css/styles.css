@@ -28,7 +28,7 @@ nav {
   position: fixed;
   width: 5rem;
   height: calc(100vh - 0.75rem);
-  background-color: rgba(255, 215, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   padding: 1rem 0.75rem;
   border-radius: 0.75rem;
   display: flex;
@@ -122,7 +122,7 @@ body.active .hidden {
   top: 10px;
   right: -50px;
   padding: 0.5rem;
-  background-color: rgba(255, 215, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   display: flex;
   justify-content: center;
