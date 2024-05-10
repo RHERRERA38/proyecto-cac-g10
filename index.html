@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BISTRO - Bienvenidos</title>
     <link rel="shortcut icon" href="/assets/img/logof.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/uikit.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit-icons.min.js" defer></script>
 </head>
 
-<body class="index-page">
+<body class="body-page">
     
-    <main class="index-container">
+    <main class="main">
 
         <section class="welcome-container">
             <h1>BISTRO</h1>
@@ -26,45 +29,85 @@
         <section class="description-container">
             <div class="description-text">
                 <h2>EL RESTAURANT</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente odio, odit molestias nostrum sunt, eligendi doloribus illum dolorem provident corrupti architecto, eius ex nemo officiis ad vitae! Minima, ad eum!</p>
+                <p>Bienvenidos a <span class="log-name">BISTRO</span>, una experiencia culinaria que trasciende fronteras y épocas. Nuestro restaurante es un homenaje a la elegancia y el glamour del movimiento Art Decó, reflejado en cada detalle arquitectónico y en la presentación de nuestros platos. Aquí, la cocina gourmet internacional se encuentra con la historia y el arte, creando un ambiente único donde cada visita es una celebración de los sentidos.</p>
                 <button class="btn-1">NUESTRA CARTA</button>
             </div>
             <div class="description-image">
-                <img src="/assets/img/restia3.jpeg" alt="Interior del RESTAURANT">
+                <!-- <img src="/assets/img/restia3.jpeg" alt="Interior del RESTAURANT"> -->
 
             </div>
         </section>
-        <section class="gallery-container">
-            <!-- Aqui deberia ir el carrusel de imágenes -->
+        
+        <section class="section-slide">
+            <div class="uk-position-relative uk-visible-toggle uk-dark slide" tabindex="-1"
+                uk-slideshow="animation: pull; autoplay: true; autoplay-interval: 5000; ">
 
+                <div class="uk-slideshow-items">
+                    <div class="img-slide">
+                        <img src="./assets/img/plato1.jpg" alt="" uk-cover>
+                    </div>
+                    <div class="img-slide">
+                        <img src="./assets//img/plato2.jpg" alt="" uk-cover>
+                    </div>
+                    <div class="img-slide">
+                        <img src="./assets/img/plato3.jpg" alt="" uk-cover>
+                    </div>
+                    <div class="img-slide">
+                        <img src="./assets/img/plato4.jpg" alt="" uk-cover>
+                    </div>
+                    <div class="img-slide">
+                        <img src="./assets/img/plato5.jpeg" alt="" uk-cover>
+                    </div>
+                    <div class="img-slide">
+                        <img src="./assets/img/plato6.jpg" alt="" uk-cover>
+                    </div>
+                </div>
+
+                <a class="uk-position-center-left uk-position-large uk-hidden-hover" href uk-slidenav-previous
+                    uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-large uk-hidden-hover" href uk-slidenav-next
+                    uk-slideshow-item="next"></a>
+                <div class="div-texto-slide">
+                    <h2 class="h2-slide">UNA EXPERIENCIA ÚNICA</h2>
+                    <p class="texto-slide">Prepárate para degustar los sabores más exquisitos y
+                        disfrutar de una aventura
+                        culinaria como ninguna otra. En <span class="log-name">BISTRO</span>, creemos que cada plato debe ser una experiencia
+                        emocional, que despierta vistas, aromas y sonidos desde tus recuerdos personales. Te espera una
+                        comida inolvidable.
+                    </p>
+                </div>
+
+            </div>
 
         </section>
 
-        <section class="ambients-container">
+
+        <section class="ambient-container">
             <div class="ambient-image">
-                <img src="/assets/img/terraza2.jpeg" alt="Ambiente del Restaurant">
+                <!-- <img src="/assets/img/terraza2.jpeg" alt="Ambiente del Restaurant"> -->
             </div>
             <div class="ambient-text">
                 <h2>AMBIENTES</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aspernatur ipsa doloremque eaque nam fugit cumque dolorum enim facere eius iste saepe unde minima autem fugiat, dolores accusamus excepturi vero.</p>
+                <p>En <span class="log-name">BISTRO</span>, cada espacio es una obra maestra. Puede deleitarse con nuestros platos en nuestros ambientes interiores, donde la elegancia y el toque moderno se combinan para ofrecer una experiencia única. O si lo prefiere, puede optar por la terraza, donde podrá apreciar vistas impresionantes de la ciudad mientras disfruta de un cóctel inolvidable; o puede elegir el Patio Jardín, un refugio que combina naturaleza y diseño para ofrecerle una experiencia gastronómica sin igual al aire libre</p>
+                <button class="btn-1">RESERVE SU MESA</button>
             </div>
-            <button class="btn-1">RESERVE SU MESA</button>
+            
         </section>
         
         <section class="location-container">
             <div class="location-text">
                 <h2>UBICACIÓN</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis amet reprehenderit iure. Alias animi culpa minima optio laudantium iusto ipsa. Quisquam esse, tempore voluptatum dicta voluptates fuga rerum exercitationem?</p>
-                
+                <p><span class="log-name">BISTRO</span> brilla en el corazón de Argentina, con locales en <strong>Puerto Madero, Caballito, Belgrano, Mar del Plata</strong> y nuestro reciente añadido en <strong>Córdoba.</strong> Cada restaurante es un destino único, donde la pasión por la gastronomía se une al estilo Art Decó. ¡Visítenos y sea parte de nuestra historia culinaria!</p>
+                <button class="btn-1">NUESTROS LOCALES</button>
             </div>
             <div class="location-image">
                 <img src="/assets/img/fachada1.jpeg" alt="Locacion">
             </div>
-            <button class="btn-1">NUESTROS LOCALES</button>
+            
         </section>
         <section class="payment">
             <div>
-                <img src="/assets/img/payment2.png" alt="pagos">
+                <!-- <img src="/assets/img/payment2.png" alt="pagos"> -->
             </div>
 
         </section>
