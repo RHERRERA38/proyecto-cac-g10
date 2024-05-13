@@ -140,7 +140,7 @@ btnReserva.addEventListener('click', function(e) {
     if(isEmpty) {
         e.preventDefault();
     }
-
+    
 })
 
 //Fin de scripts para formulario de reservas
