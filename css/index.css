@@ -51,8 +51,7 @@ Los estilos comunes del sitio deben ser aplicados en styles.css*/
     display: flex;
     flex-direction: row;
     padding-top: 1vh;
-    padding-bottom: 10px; 
-    
+    padding-bottom: 140px; 
 }
 
 .description-text {
@@ -220,5 +219,9 @@ footer {
 
 footer .log-footer {
     font-family: Limelight;
+}
+
+.slide{
+    z-index: -1;
 }
 
