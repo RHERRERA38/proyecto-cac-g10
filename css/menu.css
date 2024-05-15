@@ -153,6 +153,15 @@
   animation: fade_in_show 0.7s
 }
 
+footer {
+  text-align: center;
+  margin-top: auto;
+}
+
+footer .log-footer {
+  font-family: Limelight;
+}
+
 @keyframes fade_in_show {
   0% {
     opacity: 0;
@@ -163,10 +172,6 @@
     opacity: 1;
     /* transform: scale(1) */
   }
-}
-
-.footer {
-  text-align: center;
 }
 
 @media screen and (width < 1367px) {
