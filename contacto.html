@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BISTRO - Ubicación y Contacto</title>
+    <link rel="icon" href="/assets/img/logof.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="welcome-container">
+        <h1>BISTRO</h1>
+    </header>
+
+    <main class="main-menu">
+        <section id="contact-info">
+            <h2>VISÍTENOS</h2>
+            <p>Su experiancia culinaria inolvidable comienza aquí</p>
+        </section>
+
+        <section id="locations">
+          <h2>Elegí una de nuestras cinco sucursales:</h2>
+          <div id="location-buttons">
+              <button class="location-btn selected" data-location="belgrano">BELGRANO</button>
+              <button class="location-btn" data-location="caballito">CABALLITO</button>
+              <button class="location-btn" data-location="pto-madero">PUERTO MADERO</button>
+              <button class="location-btn" data-location="mar-del-plata">MAR DEL PLATA</button>
+              <button class="location-btn" data-location="cordoba">CÓRDOBA</button>
+          </div>
+      </section>
+            <div id="map-container">
+                <iframe id="map-iframe" src="" width="795" height="650" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    </main>
+
+    <footer id="footer" class="footer">
+        <p>&copy; 2024 <span class="log-footer">BISTRO</span> Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/contacto.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

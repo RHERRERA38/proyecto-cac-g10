@@ -1,0 +1,318 @@
+:root {
+  /*paleta de colores*/
+  --primary-color: #efb810;
+  --secondary-color: #f7d99c;
+  --third-color: #e8a344;
+  --fourth-color: #d97a1f;
+  --fifth-color: #a83504;
+  /*Otros colores a definir*/
+  --h2-color: black;
+  --section-bg-color: rgba(255, 215, 255, 0.2);
+  --box-shadow-color: rgba(0, 0, 0, 0.15);
+  --select-invalid-color: #808080;
+  --error-color: red;
+}
+
+.body-menu {
+  background-image: url(../assets/img/fondoMenu.jpeg);
+
+}
+
+.toggle-btn:hover {
+  background-color: var(--fifth-color);
+  color: var(--primary-color);
+
+}
+
+
+/* Estilos del Menu */
+
+.a-tabs {
+  all: unset;
+  font: inherit;
+  cursor: pointer;
+}
+
+
+.main {
+  margin-left: 6%;
+  transition: 500ms;
+}
+
+.siderbar-activate {
+  margin-left: 19%;
+}
+
+.h1-menu {
+  font-family: Limelight;
+  text-align: center;
+  font-size: 6rem;
+  max-width: 50%;
+  margin: auto;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin-bottom: 5px;
+  border-bottom: .2rem solid var(--fourth-color);
+}
+
+.div-tabs {
+  border-bottom: .2rem solid var(--fourth-color);
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 90%;
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+.a-tabs {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 20px 0px;
+  margin: 0px 20px;
+  display: inline-block;
+  position: relative;
+  opacity: 0.75;
+}
+
+.a-tabs:before {
+  content: "";
+  width: 0;
+  margin: auto;
+  position: absolute;
+  background-color: var(--fourth-color);
+  height: 0.1rem;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  transition: 400ms;
+}
+
+.a-tabs:hover {
+  opacity: 1;
+}
+
+.a-tabs:hover:before,
+.active::before {
+  width: 100%;
+}
+
+.borderMenu {
+  border: 2rem solid var(--fourth-color);
+  border-image: url(../assets/img/bordeMenu.png);
+  border-image-slice: 88;
+  border-image-repeat: round;
+  max-width: 90%;
+  margin: auto;
+  background-color: rgb(255, 255, 255, 0.8);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.h2-menu {
+  font-size: 2.2rem;
+}
+
+.p-menu {
+  font-size: 1.4rem;
+}
+
+.entradas {
+  display: none;
+  text-align: center;
+  max-width: 80%;
+  width: 90%;
+}
+
+.principal {
+  display: none;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.postres {
+  display: none;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.bebidas {
+  display: none;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+.show {
+  display: block;
+  animation: fade_in_show 0.7s
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+}
+
+footer .log-footer {
+  font-family: Limelight;
+}
+
+@keyframes fade_in_show {
+  0% {
+    opacity: 0;
+    /* transform: scale(0) */
+  }
+
+  100% {
+    opacity: 1;
+    /* transform: scale(1) */
+  }
+}
+
+@media screen and (width < 1367px) {
+  .p-menu {
+    font-size: 1.2rem;
+  }
+
+  .a-tabs {
+    font-size: 1.5rem;
+  }
+
+  .h1-menu {
+    font-size: 5rem;
+  }
+
+  .h2-menu {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (width < 950px) {
+  .toggle-btn {
+    display: none;
+  }
+
+  .a-tabs {
+    font-size: 1rem;
+  }
+
+  .div-tabs {
+    max-width: 80%;
+  }
+
+  .borderMenu {
+    max-width: 80%;
+  }
+
+  .p-menu {
+    font-size: 1rem;
+  }
+
+  .h1-menu {
+    max-width: 60%;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (width < 620px) {
+  .h1-menu {
+    max-width: 50%;
+    font-size: 2rem;
+  }
+
+  .div-tabs {
+    max-width: 75%;
+  }
+
+  .a-tabs {
+    font-size: .8rem;
+    margin: 0px 10px;
+  }
+
+  .h2-menu {
+    font-size: 1rem;
+  }
+
+  .p-menu {
+    font-size: 0.8rem;
+  }
+
+  .entradas {
+    max-width: 60%;
+  }
+
+  .principal {
+    max-width: 60%;
+  }
+
+  .postres {
+    max-width: 60%;
+  }
+
+  .bebidas {
+    max-width: 60%;
+  }
+
+  nav {
+    width: 3rem;
+  }
+
+  .borderMenu {
+    max-width: 75%;
+  }
+
+}
+
+@media screen and (width < 401px) {
+  .h1-menu {
+    max-width: 50%;
+    font-size: 2rem;
+  }
+
+  .div-tabs {
+    max-width: 85%;
+  }
+
+  .a-tabs {
+    font-size: .7rem;
+    margin: 0px 10px;
+  }
+
+  .h2-menu {
+    font-size: 0.9rem;
+  }
+
+  .p-menu {
+    font-size: 0.8rem;
+  }
+
+  .entradas {
+    max-width: 60%;
+  }
+
+  .principal {
+    max-width: 60%;
+  }
+
+  .postres {
+    max-width: 60%;
+  }
+
+  .bebidas {
+    max-width: 60%;
+  }
+
+  nav {
+    width: 3rem;
+  }
+
+  .borderMenu {
+    max-width: 85%;
+  }
+
+}

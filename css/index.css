@@ -1,0 +1,235 @@
+/*Estilos aplicados a la página Index.html
+Los estilos comunes del sitio deben ser aplicados en styles.css*/
+
+:root{
+    /*paleta de colores*/
+    --primary-color:#efb810;
+    --secondary-color:rgb(247, 217, 156);
+    --third-color:#e8a344;
+    --fourth-color:#d97a1f;
+    --fifth-color:#a83504;
+    /*Otros colores a definir*/
+    --h2-color: black;
+    --section-bg-color: rgba(255, 215, 255, 0.2);
+    --box-shadow-color: rgba(0, 0, 0, 0.15);
+    --select-invalid-color: #808080; 
+    --error-color: red;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bodoni Moda', sans-serif;
+}
+
+
+.main {
+    margin-left: 5rem;
+    transition: 500ms;
+}
+
+.siderbar-activate {
+    margin-left: 15rem;
+}
+
+.welcome-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 0rem;
+    background-image: url("/assets/img/rest6.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome-container h1 {
+    font-family: Limelight;
+    font-size: 8em;
+    padding-top: 200px;
+    color:beige; 
+}
+
+.subtitule {
+    color: beige;
+    font-size: 2em;
+}
+
+.description-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1vh;
+    padding-bottom: 140px; 
+}
+
+.description-text {
+    width: 40vw; 
+    padding-top: 10vh;
+    text-align: justify;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.description-text h2 {
+    font-family: 'Bodoni Moda';
+    font-weight: bold;
+}
+
+.btn-1{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid rgba(247, 217, 156, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background-color: var(--primary-color);
+
+}
+
+.btn-1:hover {
+    background-color: var(--fifth-color);
+    color: var(--primary-color);
+}
+
+.description-image {
+    width: 60vw;
+    background-image: url("/assets/img/restia3.jpeg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+}
+
+
+
+.section-slide {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 15px;
+} 
+
+
+.img-slide {
+    max-height: 100%;
+    opacity: 0.7;
+} 
+
+.div-texto-slide {
+    max-width: 70vw;
+    background-color: rgb(255, 255, 255, 0.4);
+    border-radius: 20px;
+    margin:auto; 
+    top: -37em;
+    position: relative;
+} 
+
+.h2-slide {
+    font-family: 'Bodoni Moda';
+    font-weight: bold;
+    text-align: center;
+
+} 
+
+.texto-slide {
+    padding: 10px;
+    text-align: justify;
+    /*color: #1f1e1e;*/ 
+    font-size: 1.5rem;
+}
+
+
+.ambient-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1vh;
+    padding-bottom: 10px; 
+    
+}
+
+.ambient-text {
+    width: 40vw; 
+    padding-top: 10vh;
+    text-align: justify;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    
+}
+
+.ambient-text h2 {
+    font-family: 'Bodoni Moda';
+    font-weight: bold;
+}
+
+.ambient-image {
+    width: 60vw;
+    background-image: url("/assets/img/terraza1.jpeg");
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.location-container {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1vh;
+    padding-bottom: 10px; 
+    
+}
+
+.location-text {
+    width: 40vw; 
+    padding-top: 10vh;
+    text-align: justify;
+    justify-content: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.location-text h2 {
+    font-family: 'Bodoni Moda';
+    font-weight: bold;
+}
+
+
+.location-image {
+    width: 60vw;
+    background-image: url("/assets/img/fachada1.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+.log-name {
+    font-family: Limelight;
+}
+
+
+.payment {
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url("/assets/img/payment2.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+}
+
+footer .log-footer {
+    font-family: Limelight;
+}
+
