@@ -40,7 +40,7 @@ Los estilos comunes del sitio deben ser aplicados en styles.css*/
     text-align: center;
     border-radius: 10px;
     margin-left: 0rem;
-    background-image: url("../assets/img/rest6.jpg");
+    background-image: url(../assets/img/rest6.jpg);
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,7 +97,7 @@ Los estilos comunes del sitio deben ser aplicados en styles.css*/
 
 .description-image {
     width: 60vw;
-    background-image: url("../assets/img/restia3.jpeg");
+    background-image: url(../assets/img/restia3.jpeg);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -170,7 +170,7 @@ Los estilos comunes del sitio deben ser aplicados en styles.css*/
 
 .ambient-image {
     width: 60vw;
-    background-image: url("../assets/img/terraza1.jpeg");
+    background-image: url(../assets/img/terraza1.jpeg);
     background-position: center;
     background-size: cover;
     
@@ -202,7 +202,7 @@ Los estilos comunes del sitio deben ser aplicados en styles.css*/
 
 .location-image {
     width: 60vw;
-    background-image: url("../assets/img/fachada1.jpeg");
+    background-image: url(../assets/img/fachada1.jpeg);
     background-position: center;
     background-size: cover;
 }
@@ -217,7 +217,7 @@ Los estilos comunes del sitio deben ser aplicados en styles.css*/
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-image: url("../assets/img/payment2.png");
+    background-image: url(../assets/img/payment2.png);
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center;
