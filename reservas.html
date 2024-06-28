@@ -1,27 +1,97 @@
+<!-- Página de Reservas  -->
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Restaurante</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>BISTRO - Reservas</title>
+    <link rel="shortcut icon" href="./assets/img/logof.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reserva.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
-<body>
+<body class="reserv-page">
 
 
     <main>
-        <section id="content">
-            <!-- Contenido de cada página -->
-        </section>
-    </main>
+        <!-- Menú Lateral -- DENTRO DE SCRIPT.JS -->
 
-    <footer>
-        <p>&copy; 2024 Tu Restaurante. Todos los derechos reservados.</p>
+        <!-- Sección de Reserva -->
+        <div id="form-container">
+            <section class="section-header">
+                <h1 id="name-rest">BISTRO</h1>
+                <h2>Realice su Reserva</h2>
+                <p id="reserv-text">¿Quieres asegurarte un lugar en nuestro restaurante? ¡Haz tu reserva ahora mismo!
+                    Completa el formulario para reservar tu mesa.</p>
+            </section>
+
+            <section class="reserv-form">
+                <form action="#" id="formReserva" method="GET" novalidate>
+                    <div class="form-control">
+                        <input type="text" placeholder="Nombre" required id="name">
+                    </div>
+                    <div class="error" id="error-name"></div>
+                    <div class="form-control">
+                        <input type="email" placeholder="email" required id="email">
+                    </div>
+                    <div class="error" id="error-email"></div>
+                    <div class="form-control">
+                        <input type="tel" placeholder="N° teléfono" required id="telf">
+                    </div>
+                    <div class="error" id="error-telf"></div>
+                    <div class="form-control">
+                        <input type="number" placeholder="Indique cantidad de comensales" required id="cant">
+                    </div>
+                    <div class="error" id="error-cant"></div>
+                    <div class="form-control">
+                        <input type="date" required id="date">
+                    </div>
+                    <div class="error" id="error-date"></div>
+                    <div class="form-control">
+                        <input type="time" required id="time">
+                    </div>
+                    <div class="error" id="error-time"></div>
+                    <div class="form-control">
+                        <select name="sedes" id="sedes" class="form-select" required>
+                            <option value="" disabled selected hidden>Selecciona una sede</option>
+                            <option value="Belgrano">Belgrano - Mendoza 2350 - CABA</option>
+                            <option value="Caballito">Caballito - Av. P. Goyena 1052 - CABA</option>
+                            <option value="Pto Madero">Pto Madero - O. Cossettini 785 - CABA</option>
+                            <option value="Mar Del Plata">Mar Del Plata - Leandro N. Alem 3980 - Buenos Aires</option>
+                            <option value="Cordoba">Córdoba - Av. Emilio Olmos 265 - Córdoba Capital</option>
+                        </select>
+                    </div>
+                    <div class="error" id="error-sedes"></div>
+                    <div class="form-control">
+                        <textarea cols="40" rows="3" maxlength="500" placeholder="Indique sus preferencias"
+                            id="comments"></textarea>
+                    </div>
+                    <div class="form-news">
+                        <div class="news">
+                            <input type="checkbox" id="news-check">
+                            <label for="news-check">Acepto recibir correos electrónicos con información sobre eventos
+                                exclusivos, promociones y degustaciones especiales.</label>
+                        </div>
+                    </div>
+                    <button id="btn-reserva" type="submit"><strong>RESERVAR</strong></button>
+                </form>
+            </section>
+        </div>
+        <!-- vinculo al scripts Javascript -->
+        <script src="js/scripts.js" defer></script>
+        <script src="js/insert_reserva.js" defer></script>
+    </main>
+    <footer id="footer" class="footer">
+        <p>&copy; 2024 <span class="log-footer">BISTRO</span> Todos los derechos reservados.</p>
     </footer>
 
-    <script src="js/scripts.js"></script> <!-- Si tienes algún archivo JavaScript -->
 </body>
 
 </html>
