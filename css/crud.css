@@ -1,0 +1,71 @@
+/* Estilos básicos para la tabla de reservas */
+        #reservas-container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        #reservas-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        
+        #reservas-table th, #reservas-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        #reservas-table th {
+            background-color: #264427;
+            color: white;
+            font-weight: bold;
+        }
+        
+        #reservas-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #reservas-table tr:hover {
+            background-color: #ddd;
+        }
+        
+        #reservas-table th, #reservas-table td {
+            padding: 12px 15px;
+        }
+        
+        #reservas-table th {
+            text-align: center;
+        }
+        
+        #reservas-table td {
+            text-align: center;
+        }
+        
+        button.edit-btn, button.delete-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin: 0 2px;
+        }
+        
+        button.delete-btn {
+            background-color: #f44336;
+        }
+        
+        button.edit-btn:hover, button.delete-btn:hover {
+            opacity: 0.8;
+        }
+        
