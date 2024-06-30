@@ -1,6 +1,7 @@
 <!-- Página de Reservas  -->
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,15 @@
     <link rel="stylesheet" href="./css/reserva.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body class="reserv-page">
 
-    
+
     <main>
         <!-- Menú Lateral -- DENTRO DE SCRIPT.JS -->
 
@@ -24,7 +28,8 @@
             <section class="section-header">
                 <h1 id="name-rest">BISTRO</h1>
                 <h2>Realice su Reserva</h2>
-                <p id="reserv-text">¿Quieres asegurarte un lugar en nuestro restaurante? ¡Haz tu reserva ahora mismo! Completa el formulario para reservar tu mesa.</p>
+                <p id="reserv-text">¿Quieres asegurarte un lugar en nuestro restaurante? ¡Haz tu reserva ahora mismo!
+                    Completa el formulario para reservar tu mesa.</p>
             </section>
 
             <section class="reserv-form">
@@ -65,24 +70,28 @@
                     </div>
                     <div class="error" id="error-sedes"></div>
                     <div class="form-control">
-                        <textarea cols="40" rows="3" maxlength="500" placeholder="Indique sus preferencias" id="comments"></textarea>
+                        <textarea cols="40" rows="3" maxlength="500" placeholder="Indique sus preferencias"
+                            id="comments"></textarea>
                     </div>
                     <div class="form-news">
                         <div class="news">
                             <input type="checkbox" id="news-check">
-                            <label for="news-check">Acepto recibir correos electrónicos con información sobre eventos exclusivos, promociones y degustaciones especiales.</label>
+                            <label for="news-check">Acepto recibir correos electrónicos con información sobre eventos
+                                exclusivos, promociones y degustaciones especiales.</label>
                         </div>
                     </div>
                     <button id="btn-reserva" type="submit"><strong>RESERVAR</strong></button>
                 </form>
             </section>
         </div>
-    <!-- vinculo al scripts Javascript -->
-    <script src="js/scripts.js" defer></script>
+        <!-- vinculo al scripts Javascript -->
+        <script src="js/scripts.js" defer></script>
+        <script src="js/insert_reserva.js" defer></script>
     </main>
     <footer id="footer" class="footer">
         <p>&copy; 2024 <span class="log-footer">BISTRO</span> Todos los derechos reservados.</p>
     </footer>
-    
+
 </body>
+
 </html>
