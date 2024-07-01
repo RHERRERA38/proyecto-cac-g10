@@ -22,7 +22,7 @@ if (btnGuardaReserva !== null) {
 
 /**
  * Función para comunicarse con el servidor para poder Crear o Actualizar
- * un registro de pelicula
+ * un registro de reserva
  * @returns 
  */
 async function saveReserva() {
@@ -46,7 +46,7 @@ async function saveReserva() {
         });
         return;
     }
-    // Crea un objeto con los datos de la película
+    // Crea un objeto con los datos de la reserva
     const reservaData = {
         nombre,
         email,
@@ -61,7 +61,7 @@ async function saveReserva() {
     let result = null;
 
 
-    // Si no hay idMovie, realiza una petición POST para crear una nueva película
+    // Si no hay idMovie, realiza una petición POST para crear una nueva reserva
     result = await fetchData(`${BASEURL}/api/reservas`, 'POST', reservaData);
 
 
