@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BISTRO - Reservas</title>
+    <link rel="shortcut icon" href="./assets/img/logof.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="./css/reserva.css">
+
+    <link rel="stylesheet" href="./css/crud.css">
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Limelight&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="reserv-crud">
+    <main>
+        <section class="section-header">
+            <h1 id="name-rest">BISTRO</h1>
+            <h2>Gestión de Reservas</h2>
+        </section>
+        <section id="form-edit" class="container">
+            <h2 class="search-reserva">Gestión de Reservas</h2>
+            <form action="#" id="form-edit-reserva">
+                <div class="d-flex">
+                    <div class="form-control d-flex-column">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="input-search" name="nombre" id="nombre">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="email">email</label>
+                        <input type="text" class="input-search" name="email" id="email">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" class="input-search" name="telefono" id="telefono">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="cant_comensales">Cant_Comensales</label>
+                        <input type="text" class="input-search" name="cant_comensales" id="cant_comensales">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="fecha">Fecha</label>
+                        <input type="text" class="input-search" name="fecha" id="fecha">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="hora">Hora</label>
+                        <input type="text" class="input-search" name="hora" id="hora">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="local">Local</label>
+                        <input type="text" class="input-search" name="local" id="local">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="preferencias">Preferencias</label>
+                        <input type="text" class="input-search" name="preferencias" id="preferencias">
+                    </div>
+                    <input type="hidden" name="id_reserva" id="id-reserva">
+
+                </div>
+                <div>
+                    <button class="btn-save" type="button" id="btn-save-reserva">Guardar</button>
+                </div>
+            </form>
+        </section>
+        <!-- Sección de Reserva -->
+        <div id="form-container">
+            <section class="reserv-list">
+                <table id="list-table-reservas">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Email</th>
+                            <th>Teléfono</th>
+                            <th>Comensales</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Local</th>
+                            <th>Preferencias</th>
+                            <th>¿Confirmado?</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aquí se insertarán las filas de las reservas -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer" class="footer">
+        <p>&copy; 2024 <span class="log-footer">BISTRO</span> Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Vinculo al script Javascript -->
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/crud-reservas-fetch.js"></script>
+    <!-- <script src="js/scripts.js" defer></script> -->
+</body>
+
+</html>
